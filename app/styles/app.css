@@ -1,0 +1,298 @@
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  color: #7e8299;
+}
+
+button:hover,
+details summary:hover,
+select:hover,
+input:hover {
+  cursor: pointer;
+  opacity: 0.87;
+  transition: opacity 250ms ease-in-out;
+}
+
+.app {
+  width: 100%;
+}
+
+.app__header {
+  border-bottom: 2px solid #f3f6f9;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 35px;
+}
+
+.app__container {
+  display: flex;
+}
+
+.app__content {
+  display: flex;
+  flex: 1;
+  height: calc(100vh - 150px);
+  flex-direction: column;
+  padding: 30px;
+}
+
+.app__footer {
+  margin-top: auto;
+  padding-top: 30px;
+  color: #005b96;
+}
+
+.app__header-right,
+.app__header-left {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  background-color: #f6ca65;
+  width: 44px;
+  height: 44px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 23px;
+  color: #fff;
+  font-weight: 700;
+  margin-right: 15px;
+}
+
+.username {
+  font-size: 16px;
+  color: #005b96;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  padding: 36px;
+}
+
+.nav__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+/*
+* Dashboard
+*/
+
+.dashboard__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.dashboard__header-actions {
+  display: flex;
+}
+
+.dashboard__header-actions *:not(:last-child) {
+  margin-right: 10px;
+}
+
+/*
+* Partials
+*/
+
+.select-input {
+  height: 32px;
+  min-width: 135px;
+  background-color: #1bc5bd;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.date-input {
+  background-color: #1bc5bd;
+  border: none;
+  height: 32px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+.button {
+  height: 32px;
+  background-color: #005b96;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.card-stack > .card:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.card {
+  background-color: #f1fafe;
+  border-radius: 10px;
+  padding: 18px 24px;
+}
+
+.disclosure {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+table {
+  width: 100%;
+  margin-top: 10px;
+}
+
+table thead {
+  background-color: #fff;
+  font-size: 18px;
+}
+
+table td,
+table th {
+  padding: 6px;
+}
+
+.strip tr:nth-child(2n) {
+  background-color: #fff;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.menu-burger {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin-left: 60px;
+}
+
+.menu-burger:hover {
+  cursor: pointer;
+}
+
+.menu-burger span {
+  position: absolute;
+  display: block;
+  top: 13px;
+  width: 20px;
+  height: 4px;
+  background-color: #005b96;
+  border-radius: 2px;
+}
+
+.menu-burger::after,
+.menu-burger::before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+  background-color: #005b96;
+}
+
+.menu-burger::after {
+  top: 0;
+}
+
+.menu-burger::before {
+  bottom: 0;
+}
+
+.project-list__title {
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+
+.project-list__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.not-found {
+  align-self: center;
+  margin-top: 100px;
+  max-width: 40rem;
+  text-align: center;
+}
+
+.chart-header {
+  display: flex;
+}
+
+.chart-header li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.chart-header li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.chart-header li span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+}
+
+.spinner {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  display: block;
+  border-radius: 50%;
+  border: 8px dashed #005b96;
+  animation: infinite 1s spin;
+  transition: opacity 250ms ease-in-out;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
