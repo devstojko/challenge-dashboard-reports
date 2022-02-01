@@ -1,7 +1,6 @@
 import { Form } from "remix";
 import Select from "../Select";
 
-// TODO
 type THeaderProps = {
   filters: any;
 };

@@ -6,7 +6,7 @@ import {
   useTransition,
 } from "remix";
 import AppHeader from "~/components/AppHeader";
-import DashboardNav from "~/components/DashboardNav";
+import { DashboardNav } from "~/components/dashboard";
 import getUsers from "~/services/api/users";
 
 export const loader: LoaderFunction = async ({ request }) => {
